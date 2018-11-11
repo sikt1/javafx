@@ -2,6 +2,7 @@ package application;
 	
 import java.io.IOException;
 
+import application.controller.Logincontroller;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.PopupWindow.AnchorLocation;
@@ -19,7 +20,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		this.primaryStage = primaryStage;
-		this.primaryStage.setTitle("∑Œ±◊¿Œ");
+		this.primaryStage.setTitle("Î°úÍ∑∏Ïù∏");
 		try { 
 			 initLoginLayout();
 			
@@ -44,8 +45,10 @@ public class Main extends Application {
 			AnchorPane loginView=(AnchorPane) loader.load();
 			root.setCenter(loginView);
 			
-			//LoginController controller = loader.getController();
-			
+			Logincontroller controller = loader.getController();
+			if(controller != null) {
+				controller.setMainapp(this);
+			}
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
