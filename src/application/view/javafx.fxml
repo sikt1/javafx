@@ -18,15 +18,15 @@
                     <items>
                       <AnchorPane maxHeight="100.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="450.0">
                            <children>
-                              <TextField alignment="CENTER" layoutX="111.0" layoutY="10.0" prefHeight="100.0" prefWidth="449.0" text="끝말잇기" AnchorPane.bottomAnchor="-68.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <TextField layoutX="94.0" layoutY="4.0" prefHeight="75.0" prefWidth="268.0" promptText="끝말잇기">
                                  <font>
-                                    <Font size="36.0" />
+                                    <Font name="Arial" size="53.0" />
                                  </font>
                               </TextField>
                            </children></AnchorPane>
                       <AnchorPane layoutX="19.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="160.0">
                            <children>
-                              <SplitPane dividerPositions="0.5" opacity="0.85" orientation="VERTICAL" prefHeight="200.0" prefWidth="450.0" scaleShape="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="450.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                 <items>
                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                                        <children>
@@ -51,7 +51,7 @@
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
                   <Button fx:id="login_button" alignment="CENTER" layoutX="30.0" layoutY="87.0" mnemonicParsing="false" onAction="#handleLoginButton" text="로그인" AnchorPane.bottomAnchor="173.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="87.0" />
-                  <Button fx:id="join_button" layoutX="30.0" layoutY="172.0" mnemonicParsing="false" onAction="#handlejoinButton" prefHeight="44.0" prefWidth="81.0" text="회원가입" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="172.0" />
+                  <Button layoutX="30.0" layoutY="172.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="81.0" text="회원가입" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="172.0" />
                </children>
             </AnchorPane>
         </items>

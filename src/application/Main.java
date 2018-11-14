@@ -15,7 +15,7 @@ import javafx.scene.layout.BorderPane;
 public class Main extends Application {
 	BorderPane root;
 	private Stage primaryStage;
-	
+	private Stage SecondStage;
 	
 	@Override
 	public void start(Stage primaryStage) {
@@ -27,8 +27,13 @@ public class Main extends Application {
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
+		
 		showLoginview();
 	}
+	
+
+
+	
 	public void initLoginLayout() throws IOException {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(getClass().getResource("view/RootLayout.fxml"));
